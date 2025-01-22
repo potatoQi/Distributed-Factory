@@ -18,10 +18,10 @@
 以下是本框架的效果图，图片来自于我的 paper: [Distributed aggregative optimization over directed networks with column-stochasticity](https://www.sciencedirect.com/science/article/abs/pii/S001600322400913X)
 
 <div style="display: inline-block; margin-right: 10px;">
-  <img src="./imgs_readme/1.png" width="400" />
+  <img src="./imgs_readme/1.png" width="350" />
 </div>
 <div style="display: inline-block;">
-  <img src="./imgs_readme/2.png" width="400" />
+  <img src="./imgs_readme/2.png" width="350" />
 </div>
 
 

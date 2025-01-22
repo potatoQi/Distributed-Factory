@@ -1,0 +1,338 @@
+# network_topology
+# 可选值 ["Fixed_Matrix", "TimeVarying_Matrix"]
+# TimeVarying_Matrix目前只支持生成随机图
+
+# num_graphs
+# 图数量(用于TimeVarying_Matrix, Fixed_Matrix填啥都行)
+
+# number_of_nodes
+# 节点数量
+
+# graph_type
+# 图的类型 ["chain", "star", "random_binary_tree", "perfect_binary_tree", "random_graph", "cycle", "spider_web", "full"]
+
+# matrix_type
+# 矩阵类型, 可选值: "row_stochastic", "column_stochastic", "double_stochastic"
+# 双随机图目前的生成办法就是硬试，所以生成效率很低，目前只有小数据且固定图可以接受
+
+# density
+# random图的密度，不是random图就随便填
+
+# 算法配置列表
+algorithms:
+  #  Fig. 9系列
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "DACS"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+
+  # - name: "DAGT_Algorithm"
+  #   algorithm_name: "DAGT"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+
+  # - name: "MDGT_Algorithm"
+  #   algorithm_name: "MDGT"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+
+
+
+  # Fig. 12系列
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "circular network"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "cycle"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "random network"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "complete network"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "full"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "star network"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "star"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # ---
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "density=0.1"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "density=0.3"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "density=0.5"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "density=0.9"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # ---
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=5"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 5
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=10"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 10
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=20"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 20
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=50"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 50
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+
+  # - name: "DACS_HB_Algorithm"
+  #   algorithm_name: 'n=50($\beta$=0.6)'
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 50
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+  #     vec: 0.6
+
+  
+
+  # Fig. 13系列
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "DACS (Normal)"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 20
+  #   number_of_nodes: 50
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+  #     bug_op: 0
+  
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "DACS (Node failure)"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 20
+  #   number_of_nodes: 50
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+  #     bug_op: 1
+
+  # ---
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "DACS (Normal)"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 20
+  #   number_of_nodes: 50
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+  #     bug_op: 0
+  
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "DACS (Communication disruption)"
+  #   network_topology: "TimeVarying_Matrix"
+  #   num_graphs: 20
+  #   number_of_nodes: 50
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.2
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 2000
+  #     bug_op: 2
+
+
+  # Fig. 14系列
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=10 (Normal)"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 10
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.4
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+  #     bug_op: 0
+  
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=10 (Update stagnation)"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 10
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.4
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+  #     bug_op: 3
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=100 (Update Stagnation)"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 100
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.4
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+  #     bug_op: 3
+
+  # - name: "DACS_Algorithm"
+  #   algorithm_name: "n=1000 (Update Stagnation)"
+  #   network_topology: "Fixed_Matrix"
+  #   num_graphs: 4
+  #   number_of_nodes: 1000
+  #   graph_type: "random_graph"
+  #   matrix_type: "column_stochastic"
+  #   density: 0.4
+  #   params:
+  #     learning_rate: 0.01
+  #     max_iterations: 1000
+  #     bug_op: 3
+
+#------------------------------------------------------------------------------------
+
+# 输出配置
+output_dir: "results/"       # 仿真结果的存储路径
